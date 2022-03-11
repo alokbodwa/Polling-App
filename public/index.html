@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- materialize css -->
+
+            
+    <title>pusher-poll</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Operating System(OS) Vote</h1>
+        <p>Vote for your favourite OS</p>
+        <form id="vote-form">
+            <p>
+                <input type="radio" name="os" id="windows" value="windows">
+                <label for="windows">Windows</label>
+            </p>
+            <p>
+                <input type="radio" name="os" id="MacOS" value="MacOS">
+                <label for="MacOS">MacOS</label>
+            </p>
+            <p>
+                <input type="radio" name="os" id="Linux" value="Linux">
+                <label for="Linux">Linux</label>
+            </p>
+            <p>
+                <input type="radio" name="os" id="Ubuntu" value="Ubuntu">
+                <label for="Ubuntu">Ubuntu</label>
+            </p>
+            <p>
+                <input type="radio" name="os" id="other" value="Other">
+                <label for="other">Something Else</label>
+            </p>
+            <input type="submit" value="vote" class="btn">
+        </form>
+
+        <br> <br>
+
+        <div id="chartContainer" style="height: 300px; width: 100%">
+
+        </div>
+    </div>
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/pusher/7.0.6/pusher.min.js">
+    </script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
